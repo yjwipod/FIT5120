@@ -1,0 +1,117 @@
+﻿@{
+    ViewBag.Title = ViewBag.Message;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Rank Healthy Food!</h2>
+
+<div id="foodRankingPlayground" , class="foodRankingPlayground">
+    @*<ul id="images">
+            <li>
+                <div id="food1" class="ui-widget-content, foodImg">
+                    <h2>Food 1</h2>
+                </div>
+            </li>
+            <li>
+                <div id="food2" class="ui-widget-content, foodImg">
+                    <h2>Food 2</h2>
+                </div>
+            </li>
+            <li>
+                <div id="food3" class="ui-widget-content, foodImg">
+                    <h2>Food 3</h2>
+                </div>
+            </li>
+            <li>
+                <div id="food4" class="ui-widget-content, foodImg">
+                    <h2>Food 4</h2>
+                </div>
+            </li>
+            <li>
+                <div id="food5" class="ui-widget-content, foodImg">
+                    <h2>Food 5</h2>
+                </div>
+            </li>
+        </ul>*@
+    @*<ul id="images">
+        <li>
+            <div>
+                <img alt="3dOcean" src="@Url.Content("~/images/demo/Food 1.png")" />
+            </div>
+        </li>
+        <li>
+            <div>
+                <img alt="AudioJungle" src="@Url.Content("~/images/demo/Food 2.png")" />
+            </div>
+        </li>
+        <li>
+            <div>
+                <img alt="ActiveDen" src="@Url.Content("~/images/demo/Food 3.png")" />
+            </div>
+        </li>
+        <li>
+            <div>
+                <img alt="GraphicRiver" src="@Url.Content("~/images/demo/Food 4.png")" />
+            </div>
+        </li>
+        <li>
+            <div>
+                <img alt="ThemeForest" src="@Url.Content("~/images/demo/Food 5.png")" />
+            </div>
+        </li>
+    </ul>*@
+    <div id="imgHest" class="foodImg">
+        <img alt="AudioJungle" src="@Url.Content("~/images/demo/Food 1.png")" />
+    </div>
+    <div id="imgHeal" class="foodImg">
+        <img alt="AudioJungle" src="@Url.Content("~/images/demo/Food 2.png")" />
+    </div>
+    <div id="imgNorm" class="foodImg">
+        <img alt="AudioJungle" src="@Url.Content("~/images/demo/Food 3.png")" />
+    </div>
+    <div id="imgUnh" class="foodImg">
+        <img alt="AudioJungle" src="@Url.Content("~/images/demo/Food 4.png")" />
+    </div>
+    <div id="imgUnhest" class="foodImg">
+        <img alt="AudioJungle" src="@Url.Content("~/images/demo/Food 5.png")" />
+    </div>
+
+    <table id="foodLevel" class="tableDrop">
+        <tr>
+            <td id="hest">
+                <div id="slotHest" class="tableDropSlot"></div>
+            </td>
+            <td id="heal">
+                <div id="slotHeal" class="tableDropSlot"></div>
+            </td>
+            <td id="norm">
+                <div id="slotNorm" class="tableDropSlot"></div>
+            </td>
+            <td id="unhea">
+                <div id="slotUnh" class="tableDropSlot"></div>
+            </td>
+            <td id="unhest">
+                <div id="slotUnhest" class="tableDropSlot"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Healthiest</td>
+            <td>Healthy</td>
+            <td>Normal</td>
+            <td>Unhealthy</td>
+            <td>Unhealthiest</td>
+        </tr>
+    </table>
+
+</div>
+
+@*@section Scripts {
+        @Scripts.Render("~/Scripts/jquery.js")
+        @Scripts.Render("~/Scripts/jqueryui-core-drag.js")
+        @Scripts.Render("~/Scripts/drag&drop.js")
+    }*@
+@section Scripts {
+    @*@Scripts.Render("~/Scripts/jquery.js")
+    @Scripts.Render("~/Scripts/jqueryui-core-drag.js")*@
+    @Scripts.Render("~/Scripts/drag&drop.js")
+}
